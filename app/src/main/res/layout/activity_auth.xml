@@ -4,8 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/carreterafondo"
+    android:background="@drawable/font"
     tools:context=".authActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="176dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/montserrat_alternates_black_italic"
+        android:text="CAR SOLUTIONS"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="329dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/montserrat_alternates_black_italic"
+        android:text="MEGASO"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -19,7 +54,7 @@
         app:layout_constraintVertical_bias="0.35">
 
         <EditText
-            android:id="@+id/txt_email"
+            android:id="@+id/txt_emailauth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="10"
@@ -33,7 +68,7 @@
             android:layout_height="5dp" />
 
         <EditText
-            android:id="@+id/txt_passw"
+            android:id="@+id/txt_passwauth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="10"
@@ -45,35 +80,47 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="382dp"
-        android:layout_height="96dp"
-        android:orientation="horizontal"
+        android:id="@+id/linearLayout4"
+        android:layout_width="381dp"
+        android:layout_height="101dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/btnregistrar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/teal_200"
-            android:text="Registrar" />
-
-        <Space
-            android:layout_width="14dp"
-            android:layout_height="48dp"
-            android:layout_weight="0.1" />
-
-        <Button
-            android:id="@+id/btnacceder"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/teal_700"
             android:text="Acceder" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnregistrarauth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/teal_200"
+            android:text="no estoy registrado" />
+
     </LinearLayout>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnsigningoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

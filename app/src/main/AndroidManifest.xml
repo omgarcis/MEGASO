@@ -8,9 +8,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MEGASO">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".MenuActivity"
+            android:name=".servicios"
+            android:exported="false" />
+        <activity
+            android:name=".Menu2"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
             android:exported="false" />
         <activity
             android:name=".Logout"
@@ -24,6 +30,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">MEGASO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">HOME</string>
+    <string name="perfil">PERFIL</string>
+    <string name="ajustes">AJUSTES</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_menuapp">MenuappActivity</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="title_activity_mainmenuapp">MainmenuappActivity</string>
 </resources>
